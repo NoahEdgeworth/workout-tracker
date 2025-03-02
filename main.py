@@ -37,6 +37,7 @@ workout = {
         'calories': calories
     }
 }
+
 response = requests.post(url=SHEETS_URL, json=workout, headers=sheety_headers)
 result = response.json()
 print(result)
